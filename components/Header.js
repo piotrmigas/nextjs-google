@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
+import { MicrophoneIcon, SearchIcon, XIcon, ViewGridIcon } from "@heroicons/react/solid";
+import { CogIcon } from "@heroicons/react/outline";
 import Avatar from "./Avatar";
 import HeaderOptions from "./HeaderOptions";
 
@@ -38,10 +39,11 @@ const Header = () => {
             Search
           </button>
         </form>
-        <Avatar
-          url="https://png.pngtree.com/png-vector/20190704/ourlarge/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg"
-          className="ml-auto"
-        />
+        <div className="flex ml-auto space-x-4">
+          <CogIcon className="text-gray-700 w-10 h-10 p-2 rounded-full hover:bg-gray-200 cursor-pointer hidden md:block" />
+          <ViewGridIcon className="w-10 h-10 p-2 rounded-full hover:bg-gray-200 cursor-pointer" />
+          <Avatar url="https://png.pngtree.com/png-vector/20190704/ourlarge/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" />
+        </div>
       </div>
       <HeaderOptions />
     </header>

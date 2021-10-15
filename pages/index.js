@@ -36,7 +36,7 @@ export default function Home() {
           <Avatar url="https://png.pngtree.com/png-vector/20190704/ourlarge/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" />
         </div>
       </header>
-      <form className="flex flex-col items-center mt-24 flex-grow w-4/5">
+      <form className="flex flex-col items-center mt-14 flex-grow w-4/5">
         <Image src="/img/logo.png" height={100} width={300} />
         <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
           <SearchIcon className="h-5 mr-3 text-gray-500" />

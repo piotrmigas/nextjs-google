@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import axios from 'axios';
 import { useRouter } from 'next/router';
+import { GetServerSideProps } from 'next';
 import Header from '../components/Header';
 import SearchResults from '../components/SearchResults';
 import response from '../response';
@@ -21,7 +22,7 @@ const Search = ({ results }: any) => {
 
 export default Search;
 
-export async function getServerSideProps(context: any) {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const useDummyData = false;
   const startIndex = context.query.start || '0';
 
@@ -33,4 +34,4 @@ export async function getServerSideProps(context: any) {
   return {
     props: { results },
   };
-}
+};

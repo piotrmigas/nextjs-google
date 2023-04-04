@@ -1,5 +1,5 @@
 type HeaderOptionProps = {
-  Icon: any;
+  Icon: JSX.Element;
   title: string;
   selected?: boolean;
 };
@@ -11,7 +11,7 @@ const HeaderOption = ({ Icon, title, selected }: HeaderOptionProps) => {
         selected && 'text-blue-500 border-blue-500'
       }`}
     >
-      <Icon className='h-4' />
+      {Icon}
       <p className='hidden sm:inline-flex'>{title}</p>
     </div>
   );

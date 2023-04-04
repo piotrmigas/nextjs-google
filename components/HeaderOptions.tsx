@@ -12,12 +12,12 @@ const HeaderOptions = () => {
   return (
     <div className='flex w-full text-gray-700 justify-evenly text-sm lg:text-base lg:justify-start lg:space-x-36 lg:pl-52 border-b-[1px]'>
       <div className='flex space-x-6'>
-        <HeaderOption Icon={MagnifyingGlassIcon} title='All' selected />
-        <HeaderOption Icon={PhotoIcon} title='Images' />
-        <HeaderOption Icon={PlayIcon} title='Videos' />
-        <HeaderOption Icon={NewspaperIcon} title='News' />
-        <HeaderOption Icon={MapIcon} title='Maps' />
-        <HeaderOption Icon={EllipsisVerticalIcon} title='More' />
+        <HeaderOption Icon={<MagnifyingGlassIcon className='h-4' />} title='All' selected />
+        <HeaderOption Icon={<PhotoIcon className='h-4' />} title='Images' />
+        <HeaderOption Icon={<PlayIcon className='h-4' />} title='Videos' />
+        <HeaderOption Icon={<NewspaperIcon className='h-4' />} title='News' />
+        <HeaderOption Icon={<MapIcon className='h-4' />} title='Maps' />
+        <HeaderOption Icon={<EllipsisVerticalIcon className='h-4' />} title='More' />
       </div>
       <div className='flex space-x-4'>
         <p className='link'>Settings</p>
